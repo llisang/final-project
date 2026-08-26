@@ -19,3 +19,6 @@ tbl_uvregression(
 			y = score,
 				include = c(nationality, year, part),
 					method = lm)
+
+linear_model <- lm(score ~ nationality + year + part,
+									 data = performance_by_nationality)
