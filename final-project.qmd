@@ -16,11 +16,11 @@ library(ggplot2)
 ```
 
 
-The IELTS exam consists of 4 parts: Listening, Speaking, Reading and Writing. Each part is scored from 1 to 9, then averaged for an overall score. 
+The IELTS exam consists of 4 parts: Listening, Speaking, Reading and Writing. Each part is scored from 1 to 9, then averaged for an overall score. The dataset comes from the IELTS research website and contains mean scores in various aggregations.
 
 ```{r}
 #| label: tbl-one
-#| tbl-cap: "This table shows the distribution of scores among various nationalities from years 2022 - 2024"
+#| tbl-cap: "This table shows the scores among various nationalities from years 2022 - 2024"
 #| message: false 
 
 performance_by_nationality <- read_csv(here::here("performance_by_nationality.csv"))
@@ -32,10 +32,31 @@ tbl_summary(
 	add_overall(last = TRUE)
 ```
 
+There are two versions of the exam: Academic and General Training. 
+
 ```{r}
-#| label: tbl-one
-#| tbl-cap: ""
+#| label: fig-scatter
+#| fig-cap: "This figure shows the distribution of scores for each test version"
 #| message: false 
 
+ggplot(performance_by_nationality, aes(x=score, y=type)) +
+	geom_point(color = "pink") +
+		labs(
+					y = "Reason for IELTS Exam",
+					x = "Test Score"
+		) +
+		theme_minimal()
+```
+
+```{r}
+#| label: load-data-and-plot
+#| warning: false
+#| message: false
+
+tbl_uvregression(
+	performance_by_nationality,
+			y = score,
+				include = c(nationality, year, part),
+					method = lm)
 ```
 

@@ -114,7 +114,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(tidyverse)</span>
 <span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(ggplot2)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 </div>
-<p>The IELTS exam consists of 4 parts: Listening, Speaking, Reading and Writing. Each part is scored from 1 to 9, then averaged for an overall score.</p>
+<p>The IELTS exam consists of 4 parts: Listening, Speaking, Reading and Writing. Each part is scored from 1 to 9, then averaged for an overall score. The dataset comes from the IELTS research website and contains mean scores in various aggregations.</p>
 <div class="cell">
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb2"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a>performance_by_nationality <span class="ot">&lt;-</span> <span class="fu">read_csv</span>(here<span class="sc">::</span><span class="fu">here</span>(<span class="st">"performance_by_nationality.csv"</span>))</span>
 <span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a></span>
@@ -126,27 +126,27 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <div id="tbl-one" class="cell quarto-float quarto-figure quarto-figure-center anchored">
 <figure class="quarto-float quarto-float-tbl figure">
 <figcaption class="quarto-float-caption-top quarto-float-caption quarto-float-tbl" id="tbl-one-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-Table&nbsp;1: This table shows the distribution of scores among various nationalities from years 2022 - 2024
+Table&nbsp;1: This table shows the scores among various nationalities from years 2022 - 2024
 </figcaption>
 <div aria-describedby="tbl-one-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
 <div class="cell-output-display">
-<div id="ghhsldypwf" style="padding-left:0px;padding-right:0px;padding-top:10px;padding-bottom:10px;overflow-x:auto;overflow-y:auto;width:auto;height:auto;">
-<style>#ghhsldypwf table {
+<div id="vguhbrjdue" style="padding-left:0px;padding-right:0px;padding-top:10px;padding-bottom:10px;overflow-x:auto;overflow-y:auto;width:auto;height:auto;">
+<style>#vguhbrjdue table {
   font-family: system-ui, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
-#ghhsldypwf thead, #ghhsldypwf tbody, #ghhsldypwf tfoot, #ghhsldypwf tr, #ghhsldypwf td, #ghhsldypwf th {
+#vguhbrjdue thead, #vguhbrjdue tbody, #vguhbrjdue tfoot, #vguhbrjdue tr, #vguhbrjdue td, #vguhbrjdue th {
   border-style: none;
 }
 
-#ghhsldypwf p {
+#vguhbrjdue p {
   margin: 0;
   padding: 0;
 }
 
-#ghhsldypwf .gt_table {
+#vguhbrjdue .gt_table {
   display: table;
   border-collapse: collapse;
   line-height: normal;
@@ -172,12 +172,12 @@ Table&nbsp;1: This table shows the distribution of scores among various national
   border-left-color: #D3D3D3;
 }
 
-#ghhsldypwf .gt_caption {
+#vguhbrjdue .gt_caption {
   padding-top: 4px;
   padding-bottom: 4px;
 }
 
-#ghhsldypwf .gt_title {
+#vguhbrjdue .gt_title {
   color: #333333;
   font-size: 125%;
   font-weight: initial;
@@ -189,7 +189,7 @@ Table&nbsp;1: This table shows the distribution of scores among various national
   border-bottom-width: 0;
 }
 
-#ghhsldypwf .gt_subtitle {
+#vguhbrjdue .gt_subtitle {
   color: #333333;
   font-size: 85%;
   font-weight: initial;
@@ -201,7 +201,7 @@ Table&nbsp;1: This table shows the distribution of scores among various national
   border-top-width: 0;
 }
 
-#ghhsldypwf .gt_heading {
+#vguhbrjdue .gt_heading {
   background-color: #FFFFFF;
   text-align: center;
   border-bottom-color: #FFFFFF;
@@ -213,13 +213,13 @@ Table&nbsp;1: This table shows the distribution of scores among various national
   border-right-color: #D3D3D3;
 }
 
-#ghhsldypwf .gt_bottom_border {
+#vguhbrjdue .gt_bottom_border {
   border-bottom-style: solid;
   border-bottom-width: 2px;
   border-bottom-color: #D3D3D3;
 }
 
-#ghhsldypwf .gt_col_headings {
+#vguhbrjdue .gt_col_headings {
   border-top-style: solid;
   border-top-width: 2px;
   border-top-color: #D3D3D3;
@@ -234,7 +234,7 @@ Table&nbsp;1: This table shows the distribution of scores among various national
   border-right-color: #D3D3D3;
 }
 
-#ghhsldypwf .gt_col_heading {
+#vguhbrjdue .gt_col_heading {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -254,7 +254,7 @@ Table&nbsp;1: This table shows the distribution of scores among various national
   overflow-x: hidden;
 }
 
-#ghhsldypwf .gt_column_spanner_outer {
+#vguhbrjdue .gt_column_spanner_outer {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -266,15 +266,15 @@ Table&nbsp;1: This table shows the distribution of scores among various national
   padding-right: 4px;
 }
 
-#ghhsldypwf .gt_column_spanner_outer:first-child {
+#vguhbrjdue .gt_column_spanner_outer:first-child {
   padding-left: 0;
 }
 
-#ghhsldypwf .gt_column_spanner_outer:last-child {
+#vguhbrjdue .gt_column_spanner_outer:last-child {
   padding-right: 0;
 }
 
-#ghhsldypwf .gt_column_spanner {
+#vguhbrjdue .gt_column_spanner {
   border-bottom-style: solid;
   border-bottom-width: 2px;
   border-bottom-color: #D3D3D3;
@@ -286,11 +286,11 @@ Table&nbsp;1: This table shows the distribution of scores among various national
   width: 100%;
 }
 
-#ghhsldypwf .gt_spanner_row {
+#vguhbrjdue .gt_spanner_row {
   border-bottom-style: hidden;
 }
 
-#ghhsldypwf .gt_group_heading {
+#vguhbrjdue .gt_group_heading {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -316,7 +316,7 @@ Table&nbsp;1: This table shows the distribution of scores among various national
   text-align: left;
 }
 
-#ghhsldypwf .gt_empty_group_heading {
+#vguhbrjdue .gt_empty_group_heading {
   padding: 0.5px;
   color: #333333;
   background-color: #FFFFFF;
@@ -331,15 +331,15 @@ Table&nbsp;1: This table shows the distribution of scores among various national
   vertical-align: middle;
 }
 
-#ghhsldypwf .gt_from_md > :first-child {
+#vguhbrjdue .gt_from_md > :first-child {
   margin-top: 0;
 }
 
-#ghhsldypwf .gt_from_md > :last-child {
+#vguhbrjdue .gt_from_md > :last-child {
   margin-bottom: 0;
 }
 
-#ghhsldypwf .gt_row {
+#vguhbrjdue .gt_row {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -358,7 +358,7 @@ Table&nbsp;1: This table shows the distribution of scores among various national
   overflow-x: hidden;
 }
 
-#ghhsldypwf .gt_stub {
+#vguhbrjdue .gt_stub {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -371,7 +371,7 @@ Table&nbsp;1: This table shows the distribution of scores among various national
   padding-right: 5px;
 }
 
-#ghhsldypwf .gt_stub_row_group {
+#vguhbrjdue .gt_stub_row_group {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -385,15 +385,15 @@ Table&nbsp;1: This table shows the distribution of scores among various national
   vertical-align: top;
 }
 
-#ghhsldypwf .gt_row_group_first td {
+#vguhbrjdue .gt_row_group_first td {
   border-top-width: 2px;
 }
 
-#ghhsldypwf .gt_row_group_first th {
+#vguhbrjdue .gt_row_group_first th {
   border-top-width: 2px;
 }
 
-#ghhsldypwf .gt_summary_row {
+#vguhbrjdue .gt_summary_row {
   color: #333333;
   background-color: #FFFFFF;
   text-transform: inherit;
@@ -403,16 +403,16 @@ Table&nbsp;1: This table shows the distribution of scores among various national
   padding-right: 5px;
 }
 
-#ghhsldypwf .gt_first_summary_row {
+#vguhbrjdue .gt_first_summary_row {
   border-top-style: solid;
   border-top-color: #D3D3D3;
 }
 
-#ghhsldypwf .gt_first_summary_row.thick {
+#vguhbrjdue .gt_first_summary_row.thick {
   border-top-width: 2px;
 }
 
-#ghhsldypwf .gt_last_summary_row {
+#vguhbrjdue .gt_last_summary_row {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -422,7 +422,7 @@ Table&nbsp;1: This table shows the distribution of scores among various national
   border-bottom-color: #D3D3D3;
 }
 
-#ghhsldypwf .gt_grand_summary_row {
+#vguhbrjdue .gt_grand_summary_row {
   color: #333333;
   background-color: #FFFFFF;
   text-transform: inherit;
@@ -432,7 +432,7 @@ Table&nbsp;1: This table shows the distribution of scores among various national
   padding-right: 5px;
 }
 
-#ghhsldypwf .gt_first_grand_summary_row {
+#vguhbrjdue .gt_first_grand_summary_row {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -442,7 +442,7 @@ Table&nbsp;1: This table shows the distribution of scores among various national
   border-top-color: #D3D3D3;
 }
 
-#ghhsldypwf .gt_last_grand_summary_row_top {
+#vguhbrjdue .gt_last_grand_summary_row_top {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -452,11 +452,11 @@ Table&nbsp;1: This table shows the distribution of scores among various national
   border-bottom-color: #D3D3D3;
 }
 
-#ghhsldypwf .gt_striped {
+#vguhbrjdue .gt_striped {
   background-color: rgba(128, 128, 128, 0.05);
 }
 
-#ghhsldypwf .gt_table_body {
+#vguhbrjdue .gt_table_body {
   border-top-style: solid;
   border-top-width: 2px;
   border-top-color: #D3D3D3;
@@ -465,7 +465,7 @@ Table&nbsp;1: This table shows the distribution of scores among various national
   border-bottom-color: #D3D3D3;
 }
 
-#ghhsldypwf .gt_footnotes {
+#vguhbrjdue .gt_footnotes {
   color: #333333;
   background-color: #FFFFFF;
   border-bottom-style: none;
@@ -479,7 +479,7 @@ Table&nbsp;1: This table shows the distribution of scores among various national
   border-right-color: #D3D3D3;
 }
 
-#ghhsldypwf .gt_footnote {
+#vguhbrjdue .gt_footnote {
   margin: 0px;
   font-size: 90%;
   padding-top: 4px;
@@ -488,7 +488,7 @@ Table&nbsp;1: This table shows the distribution of scores among various national
   padding-right: 5px;
 }
 
-#ghhsldypwf .gt_sourcenotes {
+#vguhbrjdue .gt_sourcenotes {
   color: #333333;
   background-color: #FFFFFF;
   border-bottom-style: none;
@@ -502,7 +502,7 @@ Table&nbsp;1: This table shows the distribution of scores among various national
   border-right-color: #D3D3D3;
 }
 
-#ghhsldypwf .gt_sourcenote {
+#vguhbrjdue .gt_sourcenote {
   font-size: 90%;
   padding-top: 4px;
   padding-bottom: 4px;
@@ -510,72 +510,72 @@ Table&nbsp;1: This table shows the distribution of scores among various national
   padding-right: 5px;
 }
 
-#ghhsldypwf .gt_left {
+#vguhbrjdue .gt_left {
   text-align: left;
 }
 
-#ghhsldypwf .gt_center {
+#vguhbrjdue .gt_center {
   text-align: center;
 }
 
-#ghhsldypwf .gt_right {
+#vguhbrjdue .gt_right {
   text-align: right;
   font-variant-numeric: tabular-nums;
 }
 
-#ghhsldypwf .gt_font_normal {
+#vguhbrjdue .gt_font_normal {
   font-weight: normal;
 }
 
-#ghhsldypwf .gt_font_bold {
+#vguhbrjdue .gt_font_bold {
   font-weight: bold;
 }
 
-#ghhsldypwf .gt_font_italic {
+#vguhbrjdue .gt_font_italic {
   font-style: italic;
 }
 
-#ghhsldypwf .gt_super {
+#vguhbrjdue .gt_super {
   font-size: 65%;
 }
 
-#ghhsldypwf .gt_footnote_marks {
+#vguhbrjdue .gt_footnote_marks {
   font-size: 75%;
   vertical-align: 0.4em;
   position: initial;
 }
 
-#ghhsldypwf .gt_asterisk {
+#vguhbrjdue .gt_asterisk {
   font-size: 100%;
   vertical-align: 0;
 }
 
-#ghhsldypwf .gt_indent_1 {
+#vguhbrjdue .gt_indent_1 {
   text-indent: 5px;
 }
 
-#ghhsldypwf .gt_indent_2 {
+#vguhbrjdue .gt_indent_2 {
   text-indent: 10px;
 }
 
-#ghhsldypwf .gt_indent_3 {
+#vguhbrjdue .gt_indent_3 {
   text-indent: 15px;
 }
 
-#ghhsldypwf .gt_indent_4 {
+#vguhbrjdue .gt_indent_4 {
   text-indent: 20px;
 }
 
-#ghhsldypwf .gt_indent_5 {
+#vguhbrjdue .gt_indent_5 {
   text-indent: 25px;
 }
 
-#ghhsldypwf .katex-display {
+#vguhbrjdue .katex-display {
   display: inline-flex !important;
   margin-bottom: 0.75em !important;
 }
 
-#ghhsldypwf div.Reactable > div.rt-table > div.rt-thead > div.rt-tr.rt-tr-group-header > div.rt-th-group:after {
+#vguhbrjdue div.Reactable > div.rt-table > div.rt-thead > div.rt-tr.rt-tr-group-header > div.rt-th-group:after {
   height: 0px !important;
 }
 </style>
@@ -1086,7 +1086,1075 @@ N = 1,180<span class="gt_footnote_marks" style="white-space:nowrap;font-style:it
 </figure>
 </div>
 </div>
-<p>The <code>echo: false</code> option disables the printing of code (only output is displayed).</p>
+<p>There are two versions of the exam: Academic and General Training.</p>
+<div class="cell">
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb3"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="fu">ggplot</span>(performance_by_nationality, <span class="fu">aes</span>(<span class="at">x=</span>score, <span class="at">y=</span>type)) <span class="sc">+</span></span>
+<span id="cb3-2"><a href="#cb3-2" aria-hidden="true" tabindex="-1"></a>    <span class="fu">geom_point</span>(<span class="at">color =</span> <span class="st">"pink"</span>) <span class="sc">+</span></span>
+<span id="cb3-3"><a href="#cb3-3" aria-hidden="true" tabindex="-1"></a>        <span class="fu">labs</span>(</span>
+<span id="cb3-4"><a href="#cb3-4" aria-hidden="true" tabindex="-1"></a>                    <span class="at">y =</span> <span class="st">"Reason for IELTS Exam"</span>,</span>
+<span id="cb3-5"><a href="#cb3-5" aria-hidden="true" tabindex="-1"></a>                    <span class="at">x =</span> <span class="st">"Test Score"</span></span>
+<span id="cb3-6"><a href="#cb3-6" aria-hidden="true" tabindex="-1"></a>        ) <span class="sc">+</span></span>
+<span id="cb3-7"><a href="#cb3-7" aria-hidden="true" tabindex="-1"></a>        <span class="fu">theme_minimal</span>()</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="cell-output-display">
+<div id="fig-scatter" class="quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-scatter-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="final-project_files/figure-html/fig-scatter-1.png" class="img-fluid figure-img" width="672">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-scatter-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;1: This figure shows the distribution of scores for each test version
+</figcaption>
+</figure>
+</div>
+</div>
+</div>
+<div class="cell">
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb4"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a><span class="fu">tbl_uvregression</span>(</span>
+<span id="cb4-2"><a href="#cb4-2" aria-hidden="true" tabindex="-1"></a>    performance_by_nationality,</span>
+<span id="cb4-3"><a href="#cb4-3" aria-hidden="true" tabindex="-1"></a>            <span class="at">y =</span> score,</span>
+<span id="cb4-4"><a href="#cb4-4" aria-hidden="true" tabindex="-1"></a>                <span class="at">include =</span> <span class="fu">c</span>(nationality, year, part),</span>
+<span id="cb4-5"><a href="#cb4-5" aria-hidden="true" tabindex="-1"></a>                    <span class="at">method =</span> lm)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="cell-output-display">
+<div id="iqzgrfwtmt" style="padding-left:0px;padding-right:0px;padding-top:10px;padding-bottom:10px;overflow-x:auto;overflow-y:auto;width:auto;height:auto;">
+<style>#iqzgrfwtmt table {
+  font-family: system-ui, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+#iqzgrfwtmt thead, #iqzgrfwtmt tbody, #iqzgrfwtmt tfoot, #iqzgrfwtmt tr, #iqzgrfwtmt td, #iqzgrfwtmt th {
+  border-style: none;
+}
+
+#iqzgrfwtmt p {
+  margin: 0;
+  padding: 0;
+}
+
+#iqzgrfwtmt .gt_table {
+  display: table;
+  border-collapse: collapse;
+  line-height: normal;
+  margin-left: auto;
+  margin-right: auto;
+  color: #333333;
+  font-size: 16px;
+  font-weight: normal;
+  font-style: normal;
+  background-color: #FFFFFF;
+  width: auto;
+  border-top-style: solid;
+  border-top-width: 2px;
+  border-top-color: #A8A8A8;
+  border-right-style: none;
+  border-right-width: 2px;
+  border-right-color: #D3D3D3;
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+  border-bottom-color: #A8A8A8;
+  border-left-style: none;
+  border-left-width: 2px;
+  border-left-color: #D3D3D3;
+}
+
+#iqzgrfwtmt .gt_caption {
+  padding-top: 4px;
+  padding-bottom: 4px;
+}
+
+#iqzgrfwtmt .gt_title {
+  color: #333333;
+  font-size: 125%;
+  font-weight: initial;
+  padding-top: 4px;
+  padding-bottom: 4px;
+  padding-left: 5px;
+  padding-right: 5px;
+  border-bottom-color: #FFFFFF;
+  border-bottom-width: 0;
+}
+
+#iqzgrfwtmt .gt_subtitle {
+  color: #333333;
+  font-size: 85%;
+  font-weight: initial;
+  padding-top: 3px;
+  padding-bottom: 5px;
+  padding-left: 5px;
+  padding-right: 5px;
+  border-top-color: #FFFFFF;
+  border-top-width: 0;
+}
+
+#iqzgrfwtmt .gt_heading {
+  background-color: #FFFFFF;
+  text-align: center;
+  border-bottom-color: #FFFFFF;
+  border-left-style: none;
+  border-left-width: 1px;
+  border-left-color: #D3D3D3;
+  border-right-style: none;
+  border-right-width: 1px;
+  border-right-color: #D3D3D3;
+}
+
+#iqzgrfwtmt .gt_bottom_border {
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+  border-bottom-color: #D3D3D3;
+}
+
+#iqzgrfwtmt .gt_col_headings {
+  border-top-style: solid;
+  border-top-width: 2px;
+  border-top-color: #D3D3D3;
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+  border-bottom-color: #D3D3D3;
+  border-left-style: none;
+  border-left-width: 1px;
+  border-left-color: #D3D3D3;
+  border-right-style: none;
+  border-right-width: 1px;
+  border-right-color: #D3D3D3;
+}
+
+#iqzgrfwtmt .gt_col_heading {
+  color: #333333;
+  background-color: #FFFFFF;
+  font-size: 100%;
+  font-weight: normal;
+  text-transform: inherit;
+  border-left-style: none;
+  border-left-width: 1px;
+  border-left-color: #D3D3D3;
+  border-right-style: none;
+  border-right-width: 1px;
+  border-right-color: #D3D3D3;
+  vertical-align: bottom;
+  padding-top: 5px;
+  padding-bottom: 6px;
+  padding-left: 5px;
+  padding-right: 5px;
+  overflow-x: hidden;
+}
+
+#iqzgrfwtmt .gt_column_spanner_outer {
+  color: #333333;
+  background-color: #FFFFFF;
+  font-size: 100%;
+  font-weight: normal;
+  text-transform: inherit;
+  padding-top: 0;
+  padding-bottom: 0;
+  padding-left: 4px;
+  padding-right: 4px;
+}
+
+#iqzgrfwtmt .gt_column_spanner_outer:first-child {
+  padding-left: 0;
+}
+
+#iqzgrfwtmt .gt_column_spanner_outer:last-child {
+  padding-right: 0;
+}
+
+#iqzgrfwtmt .gt_column_spanner {
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+  border-bottom-color: #D3D3D3;
+  vertical-align: bottom;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  overflow-x: hidden;
+  display: inline-block;
+  width: 100%;
+}
+
+#iqzgrfwtmt .gt_spanner_row {
+  border-bottom-style: hidden;
+}
+
+#iqzgrfwtmt .gt_group_heading {
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 5px;
+  padding-right: 5px;
+  color: #333333;
+  background-color: #FFFFFF;
+  font-size: 100%;
+  font-weight: initial;
+  text-transform: inherit;
+  border-top-style: solid;
+  border-top-width: 2px;
+  border-top-color: #D3D3D3;
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+  border-bottom-color: #D3D3D3;
+  border-left-style: none;
+  border-left-width: 1px;
+  border-left-color: #D3D3D3;
+  border-right-style: none;
+  border-right-width: 1px;
+  border-right-color: #D3D3D3;
+  vertical-align: middle;
+  text-align: left;
+}
+
+#iqzgrfwtmt .gt_empty_group_heading {
+  padding: 0.5px;
+  color: #333333;
+  background-color: #FFFFFF;
+  font-size: 100%;
+  font-weight: initial;
+  border-top-style: solid;
+  border-top-width: 2px;
+  border-top-color: #D3D3D3;
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+  border-bottom-color: #D3D3D3;
+  vertical-align: middle;
+}
+
+#iqzgrfwtmt .gt_from_md > :first-child {
+  margin-top: 0;
+}
+
+#iqzgrfwtmt .gt_from_md > :last-child {
+  margin-bottom: 0;
+}
+
+#iqzgrfwtmt .gt_row {
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 5px;
+  padding-right: 5px;
+  margin: 10px;
+  border-top-style: solid;
+  border-top-width: 1px;
+  border-top-color: #D3D3D3;
+  border-left-style: none;
+  border-left-width: 1px;
+  border-left-color: #D3D3D3;
+  border-right-style: none;
+  border-right-width: 1px;
+  border-right-color: #D3D3D3;
+  vertical-align: middle;
+  overflow-x: hidden;
+}
+
+#iqzgrfwtmt .gt_stub {
+  color: #333333;
+  background-color: #FFFFFF;
+  font-size: 100%;
+  font-weight: initial;
+  text-transform: inherit;
+  border-right-style: solid;
+  border-right-width: 2px;
+  border-right-color: #D3D3D3;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+#iqzgrfwtmt .gt_stub_row_group {
+  color: #333333;
+  background-color: #FFFFFF;
+  font-size: 100%;
+  font-weight: initial;
+  text-transform: inherit;
+  border-right-style: solid;
+  border-right-width: 2px;
+  border-right-color: #D3D3D3;
+  padding-left: 5px;
+  padding-right: 5px;
+  vertical-align: top;
+}
+
+#iqzgrfwtmt .gt_row_group_first td {
+  border-top-width: 2px;
+}
+
+#iqzgrfwtmt .gt_row_group_first th {
+  border-top-width: 2px;
+}
+
+#iqzgrfwtmt .gt_summary_row {
+  color: #333333;
+  background-color: #FFFFFF;
+  text-transform: inherit;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+#iqzgrfwtmt .gt_first_summary_row {
+  border-top-style: solid;
+  border-top-color: #D3D3D3;
+}
+
+#iqzgrfwtmt .gt_first_summary_row.thick {
+  border-top-width: 2px;
+}
+
+#iqzgrfwtmt .gt_last_summary_row {
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 5px;
+  padding-right: 5px;
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+  border-bottom-color: #D3D3D3;
+}
+
+#iqzgrfwtmt .gt_grand_summary_row {
+  color: #333333;
+  background-color: #FFFFFF;
+  text-transform: inherit;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+#iqzgrfwtmt .gt_first_grand_summary_row {
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 5px;
+  padding-right: 5px;
+  border-top-style: double;
+  border-top-width: 6px;
+  border-top-color: #D3D3D3;
+}
+
+#iqzgrfwtmt .gt_last_grand_summary_row_top {
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 5px;
+  padding-right: 5px;
+  border-bottom-style: double;
+  border-bottom-width: 6px;
+  border-bottom-color: #D3D3D3;
+}
+
+#iqzgrfwtmt .gt_striped {
+  background-color: rgba(128, 128, 128, 0.05);
+}
+
+#iqzgrfwtmt .gt_table_body {
+  border-top-style: solid;
+  border-top-width: 2px;
+  border-top-color: #D3D3D3;
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+  border-bottom-color: #D3D3D3;
+}
+
+#iqzgrfwtmt .gt_footnotes {
+  color: #333333;
+  background-color: #FFFFFF;
+  border-bottom-style: none;
+  border-bottom-width: 2px;
+  border-bottom-color: #D3D3D3;
+  border-left-style: none;
+  border-left-width: 2px;
+  border-left-color: #D3D3D3;
+  border-right-style: none;
+  border-right-width: 2px;
+  border-right-color: #D3D3D3;
+}
+
+#iqzgrfwtmt .gt_footnote {
+  margin: 0px;
+  font-size: 90%;
+  padding-top: 4px;
+  padding-bottom: 4px;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+#iqzgrfwtmt .gt_sourcenotes {
+  color: #333333;
+  background-color: #FFFFFF;
+  border-bottom-style: none;
+  border-bottom-width: 2px;
+  border-bottom-color: #D3D3D3;
+  border-left-style: none;
+  border-left-width: 2px;
+  border-left-color: #D3D3D3;
+  border-right-style: none;
+  border-right-width: 2px;
+  border-right-color: #D3D3D3;
+}
+
+#iqzgrfwtmt .gt_sourcenote {
+  font-size: 90%;
+  padding-top: 4px;
+  padding-bottom: 4px;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+#iqzgrfwtmt .gt_left {
+  text-align: left;
+}
+
+#iqzgrfwtmt .gt_center {
+  text-align: center;
+}
+
+#iqzgrfwtmt .gt_right {
+  text-align: right;
+  font-variant-numeric: tabular-nums;
+}
+
+#iqzgrfwtmt .gt_font_normal {
+  font-weight: normal;
+}
+
+#iqzgrfwtmt .gt_font_bold {
+  font-weight: bold;
+}
+
+#iqzgrfwtmt .gt_font_italic {
+  font-style: italic;
+}
+
+#iqzgrfwtmt .gt_super {
+  font-size: 65%;
+}
+
+#iqzgrfwtmt .gt_footnote_marks {
+  font-size: 75%;
+  vertical-align: 0.4em;
+  position: initial;
+}
+
+#iqzgrfwtmt .gt_asterisk {
+  font-size: 100%;
+  vertical-align: 0;
+}
+
+#iqzgrfwtmt .gt_indent_1 {
+  text-indent: 5px;
+}
+
+#iqzgrfwtmt .gt_indent_2 {
+  text-indent: 10px;
+}
+
+#iqzgrfwtmt .gt_indent_3 {
+  text-indent: 15px;
+}
+
+#iqzgrfwtmt .gt_indent_4 {
+  text-indent: 20px;
+}
+
+#iqzgrfwtmt .gt_indent_5 {
+  text-indent: 25px;
+}
+
+#iqzgrfwtmt .katex-display {
+  display: inline-flex !important;
+  margin-bottom: 0.75em !important;
+}
+
+#iqzgrfwtmt div.Reactable > div.rt-table > div.rt-thead > div.rt-tr.rt-tr-group-header > div.rt-th-group:after {
+  height: 0px !important;
+}
+</style>
+
+<table class="gt_table caption-top table table-sm table-striped small" data-quarto-bootstrap="false">
+<colgroup>
+<col style="width: 20%">
+<col style="width: 20%">
+<col style="width: 20%">
+<col style="width: 20%">
+<col style="width: 20%">
+</colgroup>
+<thead>
+<tr class="gt_col_headings header">
+<th id="label" class="gt_col_heading gt_columns_bottom_border gt_left" data-quarto-table-cell-role="th" scope="col"><strong>Characteristic</strong></th>
+<th id="stat_n" class="gt_col_heading gt_columns_bottom_border gt_center" data-quarto-table-cell-role="th" scope="col"><strong>N</strong></th>
+<th id="estimate" class="gt_col_heading gt_columns_bottom_border gt_center" data-quarto-table-cell-role="th" scope="col"><strong>Beta</strong></th>
+<th id="conf.low" class="gt_col_heading gt_columns_bottom_border gt_center" data-quarto-table-cell-role="th" scope="col"><strong>95% CI</strong></th>
+<th id="p.value" class="gt_col_heading gt_columns_bottom_border gt_center" data-quarto-table-cell-role="th" scope="col"><strong>p-value</strong></th>
+</tr>
+</thead>
+<tbody class="gt_table_body">
+<tr class="odd">
+<td class="gt_row gt_left" headers="label">nationality</td>
+<td class="gt_row gt_center" headers="stat_n">1,180</td>
+<td class="gt_row gt_center" headers="estimate"><br>
+</td>
+<td class="gt_row gt_center" headers="conf.low"><br>
+</td>
+<td class="gt_row gt_center" headers="p.value"><br>
+</td>
+</tr>
+<tr class="even">
+<td class="gt_row gt_left" headers="label">&nbsp;&nbsp;&nbsp;&nbsp;Algeria</td>
+<td class="gt_row gt_center" headers="stat_n"><br>
+</td>
+<td class="gt_row gt_center" headers="estimate">—</td>
+<td class="gt_row gt_center" headers="conf.low">—</td>
+<td class="gt_row gt_center" headers="p.value"><br>
+</td>
+</tr>
+<tr class="odd">
+<td class="gt_row gt_left" headers="label">&nbsp;&nbsp;&nbsp;&nbsp;Argentina</td>
+<td class="gt_row gt_center" headers="stat_n"><br>
+</td>
+<td class="gt_row gt_center" headers="estimate">0.43</td>
+<td class="gt_row gt_center" headers="conf.low">0.06, 0.80</td>
+<td class="gt_row gt_center" headers="p.value">0.022</td>
+</tr>
+<tr class="even">
+<td class="gt_row gt_left" headers="label">&nbsp;&nbsp;&nbsp;&nbsp;Azerbaijan</td>
+<td class="gt_row gt_center" headers="stat_n"><br>
+</td>
+<td class="gt_row gt_center" headers="estimate">0.71</td>
+<td class="gt_row gt_center" headers="conf.low">0.32, 1.1</td>
+<td class="gt_row gt_center" headers="p.value">&lt;0.001</td>
+</tr>
+<tr class="odd">
+<td class="gt_row gt_left" headers="label">&nbsp;&nbsp;&nbsp;&nbsp;Bangladesh</td>
+<td class="gt_row gt_center" headers="stat_n"><br>
+</td>
+<td class="gt_row gt_center" headers="estimate">-0.02</td>
+<td class="gt_row gt_center" headers="conf.low">-0.36, 0.33</td>
+<td class="gt_row gt_center" headers="p.value">&gt;0.9</td>
+</tr>
+<tr class="even">
+<td class="gt_row gt_left" headers="label">&nbsp;&nbsp;&nbsp;&nbsp;Bhutan</td>
+<td class="gt_row gt_center" headers="stat_n"><br>
+</td>
+<td class="gt_row gt_center" headers="estimate">0.25</td>
+<td class="gt_row gt_center" headers="conf.low">-0.20, 0.70</td>
+<td class="gt_row gt_center" headers="p.value">0.3</td>
+</tr>
+<tr class="odd">
+<td class="gt_row gt_left" headers="label">&nbsp;&nbsp;&nbsp;&nbsp;Brazil</td>
+<td class="gt_row gt_center" headers="stat_n"><br>
+</td>
+<td class="gt_row gt_center" headers="estimate">0.80</td>
+<td class="gt_row gt_center" headers="conf.low">0.44, 1.2</td>
+<td class="gt_row gt_center" headers="p.value">&lt;0.001</td>
+</tr>
+<tr class="even">
+<td class="gt_row gt_left" headers="label">&nbsp;&nbsp;&nbsp;&nbsp;Cambodia</td>
+<td class="gt_row gt_center" headers="stat_n"><br>
+</td>
+<td class="gt_row gt_center" headers="estimate">0.14</td>
+<td class="gt_row gt_center" headers="conf.low">-0.23, 0.51</td>
+<td class="gt_row gt_center" headers="p.value">0.5</td>
+</tr>
+<tr class="odd">
+<td class="gt_row gt_left" headers="label">&nbsp;&nbsp;&nbsp;&nbsp;Cameroon</td>
+<td class="gt_row gt_center" headers="stat_n"><br>
+</td>
+<td class="gt_row gt_center" headers="estimate">-0.19</td>
+<td class="gt_row gt_center" headers="conf.low">-0.55, 0.18</td>
+<td class="gt_row gt_center" headers="p.value">0.3</td>
+</tr>
+<tr class="even">
+<td class="gt_row gt_left" headers="label">&nbsp;&nbsp;&nbsp;&nbsp;Chile</td>
+<td class="gt_row gt_center" headers="stat_n"><br>
+</td>
+<td class="gt_row gt_center" headers="estimate">0.17</td>
+<td class="gt_row gt_center" headers="conf.low">-0.20, 0.54</td>
+<td class="gt_row gt_center" headers="p.value">0.4</td>
+</tr>
+<tr class="odd">
+<td class="gt_row gt_left" headers="label">&nbsp;&nbsp;&nbsp;&nbsp;China</td>
+<td class="gt_row gt_center" headers="stat_n"><br>
+</td>
+<td class="gt_row gt_center" headers="estimate">0.26</td>
+<td class="gt_row gt_center" headers="conf.low">-0.08, 0.60</td>
+<td class="gt_row gt_center" headers="p.value">0.14</td>
+</tr>
+<tr class="even">
+<td class="gt_row gt_left" headers="label">&nbsp;&nbsp;&nbsp;&nbsp;Colombia</td>
+<td class="gt_row gt_center" headers="stat_n"><br>
+</td>
+<td class="gt_row gt_center" headers="estimate">0.56</td>
+<td class="gt_row gt_center" headers="conf.low">0.21, 0.90</td>
+<td class="gt_row gt_center" headers="p.value">0.002</td>
+</tr>
+<tr class="odd">
+<td class="gt_row gt_left" headers="label">&nbsp;&nbsp;&nbsp;&nbsp;Egypt</td>
+<td class="gt_row gt_center" headers="stat_n"><br>
+</td>
+<td class="gt_row gt_center" headers="estimate">0.67</td>
+<td class="gt_row gt_center" headers="conf.low">0.33, 1.0</td>
+<td class="gt_row gt_center" headers="p.value">&lt;0.001</td>
+</tr>
+<tr class="even">
+<td class="gt_row gt_left" headers="label">&nbsp;&nbsp;&nbsp;&nbsp;France</td>
+<td class="gt_row gt_center" headers="stat_n"><br>
+</td>
+<td class="gt_row gt_center" headers="estimate">1.0</td>
+<td class="gt_row gt_center" headers="conf.low">0.67, 1.4</td>
+<td class="gt_row gt_center" headers="p.value">&lt;0.001</td>
+</tr>
+<tr class="odd">
+<td class="gt_row gt_left" headers="label">&nbsp;&nbsp;&nbsp;&nbsp;Germany</td>
+<td class="gt_row gt_center" headers="stat_n"><br>
+</td>
+<td class="gt_row gt_center" headers="estimate">1.5</td>
+<td class="gt_row gt_center" headers="conf.low">1.2, 1.9</td>
+<td class="gt_row gt_center" headers="p.value">&lt;0.001</td>
+</tr>
+<tr class="even">
+<td class="gt_row gt_left" headers="label">&nbsp;&nbsp;&nbsp;&nbsp;Ghana</td>
+<td class="gt_row gt_center" headers="stat_n"><br>
+</td>
+<td class="gt_row gt_center" headers="estimate">0.52</td>
+<td class="gt_row gt_center" headers="conf.low">0.17, 0.86</td>
+<td class="gt_row gt_center" headers="p.value">0.003</td>
+</tr>
+<tr class="odd">
+<td class="gt_row gt_left" headers="label">&nbsp;&nbsp;&nbsp;&nbsp;Hong Kong</td>
+<td class="gt_row gt_center" headers="stat_n"><br>
+</td>
+<td class="gt_row gt_center" headers="estimate">0.79</td>
+<td class="gt_row gt_center" headers="conf.low">0.44, 1.2</td>
+<td class="gt_row gt_center" headers="p.value">&lt;0.001</td>
+</tr>
+<tr class="even">
+<td class="gt_row gt_left" headers="label">&nbsp;&nbsp;&nbsp;&nbsp;Hong Kong, SAR of China</td>
+<td class="gt_row gt_center" headers="stat_n"><br>
+</td>
+<td class="gt_row gt_center" headers="estimate">0.75</td>
+<td class="gt_row gt_center" headers="conf.low">0.36, 1.1</td>
+<td class="gt_row gt_center" headers="p.value">&lt;0.001</td>
+</tr>
+<tr class="odd">
+<td class="gt_row gt_left" headers="label">&nbsp;&nbsp;&nbsp;&nbsp;India</td>
+<td class="gt_row gt_center" headers="stat_n"><br>
+</td>
+<td class="gt_row gt_center" headers="estimate">0.54</td>
+<td class="gt_row gt_center" headers="conf.low">0.19, 0.88</td>
+<td class="gt_row gt_center" headers="p.value">0.002</td>
+</tr>
+<tr class="even">
+<td class="gt_row gt_left" headers="label">&nbsp;&nbsp;&nbsp;&nbsp;Indonesia</td>
+<td class="gt_row gt_center" headers="stat_n"><br>
+</td>
+<td class="gt_row gt_center" headers="estimate">0.36</td>
+<td class="gt_row gt_center" headers="conf.low">0.01, 0.70</td>
+<td class="gt_row gt_center" headers="p.value">0.043</td>
+</tr>
+<tr class="odd">
+<td class="gt_row gt_left" headers="label">&nbsp;&nbsp;&nbsp;&nbsp;Iran</td>
+<td class="gt_row gt_center" headers="stat_n"><br>
+</td>
+<td class="gt_row gt_center" headers="estimate">0.47</td>
+<td class="gt_row gt_center" headers="conf.low">0.08, 0.86</td>
+<td class="gt_row gt_center" headers="p.value">0.019</td>
+</tr>
+<tr class="even">
+<td class="gt_row gt_left" headers="label">&nbsp;&nbsp;&nbsp;&nbsp;Iran, Islamic Republic of</td>
+<td class="gt_row gt_center" headers="stat_n"><br>
+</td>
+<td class="gt_row gt_center" headers="estimate">0.50</td>
+<td class="gt_row gt_center" headers="conf.low">0.14, 0.85</td>
+<td class="gt_row gt_center" headers="p.value">0.006</td>
+</tr>
+<tr class="odd">
+<td class="gt_row gt_left" headers="label">&nbsp;&nbsp;&nbsp;&nbsp;Italy</td>
+<td class="gt_row gt_center" headers="stat_n"><br>
+</td>
+<td class="gt_row gt_center" headers="estimate">0.88</td>
+<td class="gt_row gt_center" headers="conf.low">0.53, 1.2</td>
+<td class="gt_row gt_center" headers="p.value">&lt;0.001</td>
+</tr>
+<tr class="even">
+<td class="gt_row gt_left" headers="label">&nbsp;&nbsp;&nbsp;&nbsp;Japan</td>
+<td class="gt_row gt_center" headers="stat_n"><br>
+</td>
+<td class="gt_row gt_center" headers="estimate">-0.03</td>
+<td class="gt_row gt_center" headers="conf.low">-0.38, 0.31</td>
+<td class="gt_row gt_center" headers="p.value">0.8</td>
+</tr>
+<tr class="odd">
+<td class="gt_row gt_left" headers="label">&nbsp;&nbsp;&nbsp;&nbsp;Jordan</td>
+<td class="gt_row gt_center" headers="stat_n"><br>
+</td>
+<td class="gt_row gt_center" headers="estimate">0.57</td>
+<td class="gt_row gt_center" headers="conf.low">0.22, 0.93</td>
+<td class="gt_row gt_center" headers="p.value">0.002</td>
+</tr>
+<tr class="even">
+<td class="gt_row gt_left" headers="label">&nbsp;&nbsp;&nbsp;&nbsp;Kazakhstan</td>
+<td class="gt_row gt_center" headers="stat_n"><br>
+</td>
+<td class="gt_row gt_center" headers="estimate">0.41</td>
+<td class="gt_row gt_center" headers="conf.low">0.04, 0.78</td>
+<td class="gt_row gt_center" headers="p.value">0.029</td>
+</tr>
+<tr class="odd">
+<td class="gt_row gt_left" headers="label">&nbsp;&nbsp;&nbsp;&nbsp;Kenya</td>
+<td class="gt_row gt_center" headers="stat_n"><br>
+</td>
+<td class="gt_row gt_center" headers="estimate">0.69</td>
+<td class="gt_row gt_center" headers="conf.low">0.34, 1.0</td>
+<td class="gt_row gt_center" headers="p.value">&lt;0.001</td>
+</tr>
+<tr class="even">
+<td class="gt_row gt_left" headers="label">&nbsp;&nbsp;&nbsp;&nbsp;Korea, Republic of</td>
+<td class="gt_row gt_center" headers="stat_n"><br>
+</td>
+<td class="gt_row gt_center" headers="estimate">0.26</td>
+<td class="gt_row gt_center" headers="conf.low">-0.09, 0.60</td>
+<td class="gt_row gt_center" headers="p.value">0.14</td>
+</tr>
+<tr class="odd">
+<td class="gt_row gt_left" headers="label">&nbsp;&nbsp;&nbsp;&nbsp;Kuwait</td>
+<td class="gt_row gt_center" headers="stat_n"><br>
+</td>
+<td class="gt_row gt_center" headers="estimate">-0.29</td>
+<td class="gt_row gt_center" headers="conf.low">-0.66, 0.08</td>
+<td class="gt_row gt_center" headers="p.value">0.12</td>
+</tr>
+<tr class="even">
+<td class="gt_row gt_left" headers="label">&nbsp;&nbsp;&nbsp;&nbsp;Lebanon</td>
+<td class="gt_row gt_center" headers="stat_n"><br>
+</td>
+<td class="gt_row gt_center" headers="estimate">0.82</td>
+<td class="gt_row gt_center" headers="conf.low">0.43, 1.2</td>
+<td class="gt_row gt_center" headers="p.value">&lt;0.001</td>
+</tr>
+<tr class="odd">
+<td class="gt_row gt_left" headers="label">&nbsp;&nbsp;&nbsp;&nbsp;Malaysia</td>
+<td class="gt_row gt_center" headers="stat_n"><br>
+</td>
+<td class="gt_row gt_center" headers="estimate">1.0</td>
+<td class="gt_row gt_center" headers="conf.low">0.68, 1.4</td>
+<td class="gt_row gt_center" headers="p.value">&lt;0.001</td>
+</tr>
+<tr class="even">
+<td class="gt_row gt_left" headers="label">&nbsp;&nbsp;&nbsp;&nbsp;Mauritius</td>
+<td class="gt_row gt_center" headers="stat_n"><br>
+</td>
+<td class="gt_row gt_center" headers="estimate">0.88</td>
+<td class="gt_row gt_center" headers="conf.low">0.48, 1.3</td>
+<td class="gt_row gt_center" headers="p.value">&lt;0.001</td>
+</tr>
+<tr class="odd">
+<td class="gt_row gt_left" headers="label">&nbsp;&nbsp;&nbsp;&nbsp;Mexico</td>
+<td class="gt_row gt_center" headers="stat_n"><br>
+</td>
+<td class="gt_row gt_center" headers="estimate">0.69</td>
+<td class="gt_row gt_center" headers="conf.low">0.34, 1.0</td>
+<td class="gt_row gt_center" headers="p.value">&lt;0.001</td>
+</tr>
+<tr class="even">
+<td class="gt_row gt_left" headers="label">&nbsp;&nbsp;&nbsp;&nbsp;Mongolia</td>
+<td class="gt_row gt_center" headers="stat_n"><br>
+</td>
+<td class="gt_row gt_center" headers="estimate">0.47</td>
+<td class="gt_row gt_center" headers="conf.low">0.08, 0.86</td>
+<td class="gt_row gt_center" headers="p.value">0.018</td>
+</tr>
+<tr class="odd">
+<td class="gt_row gt_left" headers="label">&nbsp;&nbsp;&nbsp;&nbsp;Morocco</td>
+<td class="gt_row gt_center" headers="stat_n"><br>
+</td>
+<td class="gt_row gt_center" headers="estimate">0.20</td>
+<td class="gt_row gt_center" headers="conf.low">-0.19, 0.59</td>
+<td class="gt_row gt_center" headers="p.value">0.3</td>
+</tr>
+<tr class="even">
+<td class="gt_row gt_left" headers="label">&nbsp;&nbsp;&nbsp;&nbsp;Myanmar</td>
+<td class="gt_row gt_center" headers="stat_n"><br>
+</td>
+<td class="gt_row gt_center" headers="estimate">0.71</td>
+<td class="gt_row gt_center" headers="conf.low">0.34, 1.1</td>
+<td class="gt_row gt_center" headers="p.value">&lt;0.001</td>
+</tr>
+<tr class="odd">
+<td class="gt_row gt_left" headers="label">&nbsp;&nbsp;&nbsp;&nbsp;Nepal</td>
+<td class="gt_row gt_center" headers="stat_n"><br>
+</td>
+<td class="gt_row gt_center" headers="estimate">0.14</td>
+<td class="gt_row gt_center" headers="conf.low">-0.21, 0.48</td>
+<td class="gt_row gt_center" headers="p.value">0.4</td>
+</tr>
+<tr class="even">
+<td class="gt_row gt_left" headers="label">&nbsp;&nbsp;&nbsp;&nbsp;Nigeria</td>
+<td class="gt_row gt_center" headers="stat_n"><br>
+</td>
+<td class="gt_row gt_center" headers="estimate">0.74</td>
+<td class="gt_row gt_center" headers="conf.low">0.40, 1.1</td>
+<td class="gt_row gt_center" headers="p.value">&lt;0.001</td>
+</tr>
+<tr class="odd">
+<td class="gt_row gt_left" headers="label">&nbsp;&nbsp;&nbsp;&nbsp;Oman</td>
+<td class="gt_row gt_center" headers="stat_n"><br>
+</td>
+<td class="gt_row gt_center" headers="estimate">-0.47</td>
+<td class="gt_row gt_center" headers="conf.low">-0.84, -0.11</td>
+<td class="gt_row gt_center" headers="p.value">0.011</td>
+</tr>
+<tr class="even">
+<td class="gt_row gt_left" headers="label">&nbsp;&nbsp;&nbsp;&nbsp;Pakistan</td>
+<td class="gt_row gt_center" headers="stat_n"><br>
+</td>
+<td class="gt_row gt_center" headers="estimate">0.21</td>
+<td class="gt_row gt_center" headers="conf.low">-0.14, 0.55</td>
+<td class="gt_row gt_center" headers="p.value">0.2</td>
+</tr>
+<tr class="odd">
+<td class="gt_row gt_left" headers="label">&nbsp;&nbsp;&nbsp;&nbsp;Peru</td>
+<td class="gt_row gt_center" headers="stat_n"><br>
+</td>
+<td class="gt_row gt_center" headers="estimate">0.19</td>
+<td class="gt_row gt_center" headers="conf.low">-0.20, 0.58</td>
+<td class="gt_row gt_center" headers="p.value">0.4</td>
+</tr>
+<tr class="even">
+<td class="gt_row gt_left" headers="label">&nbsp;&nbsp;&nbsp;&nbsp;Philippines</td>
+<td class="gt_row gt_center" headers="stat_n"><br>
+</td>
+<td class="gt_row gt_center" headers="estimate">0.45</td>
+<td class="gt_row gt_center" headers="conf.low">0.10, 0.79</td>
+<td class="gt_row gt_center" headers="p.value">0.011</td>
+</tr>
+<tr class="odd">
+<td class="gt_row gt_left" headers="label">&nbsp;&nbsp;&nbsp;&nbsp;Qatar</td>
+<td class="gt_row gt_center" headers="stat_n"><br>
+</td>
+<td class="gt_row gt_center" headers="estimate">-0.33</td>
+<td class="gt_row gt_center" headers="conf.low">-0.78, 0.12</td>
+<td class="gt_row gt_center" headers="p.value">0.15</td>
+</tr>
+<tr class="even">
+<td class="gt_row gt_left" headers="label">&nbsp;&nbsp;&nbsp;&nbsp;Russian Federation</td>
+<td class="gt_row gt_center" headers="stat_n"><br>
+</td>
+<td class="gt_row gt_center" headers="estimate">1.0</td>
+<td class="gt_row gt_center" headers="conf.low">0.66, 1.3</td>
+<td class="gt_row gt_center" headers="p.value">&lt;0.001</td>
+</tr>
+<tr class="odd">
+<td class="gt_row gt_left" headers="label">&nbsp;&nbsp;&nbsp;&nbsp;Saudi Arabia</td>
+<td class="gt_row gt_center" headers="stat_n"><br>
+</td>
+<td class="gt_row gt_center" headers="estimate">-0.45</td>
+<td class="gt_row gt_center" headers="conf.low">-0.79, -0.10</td>
+<td class="gt_row gt_center" headers="p.value">0.011</td>
+</tr>
+<tr class="even">
+<td class="gt_row gt_left" headers="label">&nbsp;&nbsp;&nbsp;&nbsp;South Africa</td>
+<td class="gt_row gt_center" headers="stat_n"><br>
+</td>
+<td class="gt_row gt_center" headers="estimate">1.2</td>
+<td class="gt_row gt_center" headers="conf.low">0.81, 1.5</td>
+<td class="gt_row gt_center" headers="p.value">&lt;0.001</td>
+</tr>
+<tr class="odd">
+<td class="gt_row gt_left" headers="label">&nbsp;&nbsp;&nbsp;&nbsp;Spain</td>
+<td class="gt_row gt_center" headers="stat_n"><br>
+</td>
+<td class="gt_row gt_center" headers="estimate">0.90</td>
+<td class="gt_row gt_center" headers="conf.low">0.56, 1.2</td>
+<td class="gt_row gt_center" headers="p.value">&lt;0.001</td>
+</tr>
+<tr class="even">
+<td class="gt_row gt_left" headers="label">&nbsp;&nbsp;&nbsp;&nbsp;Sri Lanka</td>
+<td class="gt_row gt_center" headers="stat_n"><br>
+</td>
+<td class="gt_row gt_center" headers="estimate">0.31</td>
+<td class="gt_row gt_center" headers="conf.low">-0.04, 0.65</td>
+<td class="gt_row gt_center" headers="p.value">0.079</td>
+</tr>
+<tr class="odd">
+<td class="gt_row gt_left" headers="label">&nbsp;&nbsp;&nbsp;&nbsp;Taiwan</td>
+<td class="gt_row gt_center" headers="stat_n"><br>
+</td>
+<td class="gt_row gt_center" headers="estimate">0.38</td>
+<td class="gt_row gt_center" headers="conf.low">-0.01, 0.77</td>
+<td class="gt_row gt_center" headers="p.value">0.054</td>
+</tr>
+<tr class="even">
+<td class="gt_row gt_left" headers="label">&nbsp;&nbsp;&nbsp;&nbsp;Thailand</td>
+<td class="gt_row gt_center" headers="stat_n"><br>
+</td>
+<td class="gt_row gt_center" headers="estimate">-0.15</td>
+<td class="gt_row gt_center" headers="conf.low">-0.50, 0.19</td>
+<td class="gt_row gt_center" headers="p.value">0.4</td>
+</tr>
+<tr class="odd">
+<td class="gt_row gt_left" headers="label">&nbsp;&nbsp;&nbsp;&nbsp;Tunisia</td>
+<td class="gt_row gt_center" headers="stat_n"><br>
+</td>
+<td class="gt_row gt_center" headers="estimate">-0.07</td>
+<td class="gt_row gt_center" headers="conf.low">-0.52, 0.38</td>
+<td class="gt_row gt_center" headers="p.value">0.8</td>
+</tr>
+<tr class="even">
+<td class="gt_row gt_left" headers="label">&nbsp;&nbsp;&nbsp;&nbsp;Turkey</td>
+<td class="gt_row gt_center" headers="stat_n"><br>
+</td>
+<td class="gt_row gt_center" headers="estimate">0.34</td>
+<td class="gt_row gt_center" headers="conf.low">-0.01, 0.68</td>
+<td class="gt_row gt_center" headers="p.value">0.054</td>
+</tr>
+<tr class="odd">
+<td class="gt_row gt_left" headers="label">&nbsp;&nbsp;&nbsp;&nbsp;Uganda</td>
+<td class="gt_row gt_center" headers="stat_n"><br>
+</td>
+<td class="gt_row gt_center" headers="estimate">0.04</td>
+<td class="gt_row gt_center" headers="conf.low">-0.35, 0.43</td>
+<td class="gt_row gt_center" headers="p.value">0.9</td>
+</tr>
+<tr class="even">
+<td class="gt_row gt_left" headers="label">&nbsp;&nbsp;&nbsp;&nbsp;Ukraine</td>
+<td class="gt_row gt_center" headers="stat_n"><br>
+</td>
+<td class="gt_row gt_center" headers="estimate">0.71</td>
+<td class="gt_row gt_center" headers="conf.low">0.35, 1.1</td>
+<td class="gt_row gt_center" headers="p.value">&lt;0.001</td>
+</tr>
+<tr class="odd">
+<td class="gt_row gt_left" headers="label">&nbsp;&nbsp;&nbsp;&nbsp;United Arab Emirates</td>
+<td class="gt_row gt_center" headers="stat_n"><br>
+</td>
+<td class="gt_row gt_center" headers="estimate">-0.39</td>
+<td class="gt_row gt_center" headers="conf.low">-0.76, -0.02</td>
+<td class="gt_row gt_center" headers="p.value">0.037</td>
+</tr>
+<tr class="even">
+<td class="gt_row gt_left" headers="label">&nbsp;&nbsp;&nbsp;&nbsp;United States of America</td>
+<td class="gt_row gt_center" headers="stat_n"><br>
+</td>
+<td class="gt_row gt_center" headers="estimate">2.3</td>
+<td class="gt_row gt_center" headers="conf.low">1.9, 2.7</td>
+<td class="gt_row gt_center" headers="p.value">&lt;0.001</td>
+</tr>
+<tr class="odd">
+<td class="gt_row gt_left" headers="label">&nbsp;&nbsp;&nbsp;&nbsp;Uzbekistan</td>
+<td class="gt_row gt_center" headers="stat_n"><br>
+</td>
+<td class="gt_row gt_center" headers="estimate">0.09</td>
+<td class="gt_row gt_center" headers="conf.low">-0.28, 0.46</td>
+<td class="gt_row gt_center" headers="p.value">0.6</td>
+</tr>
+<tr class="even">
+<td class="gt_row gt_left" headers="label">&nbsp;&nbsp;&nbsp;&nbsp;Vietnam</td>
+<td class="gt_row gt_center" headers="stat_n"><br>
+</td>
+<td class="gt_row gt_center" headers="estimate">0.12</td>
+<td class="gt_row gt_center" headers="conf.low">-0.22, 0.47</td>
+<td class="gt_row gt_center" headers="p.value">0.5</td>
+</tr>
+<tr class="odd">
+<td class="gt_row gt_left" headers="label">&nbsp;&nbsp;&nbsp;&nbsp;Zimbabwe</td>
+<td class="gt_row gt_center" headers="stat_n"><br>
+</td>
+<td class="gt_row gt_center" headers="estimate">0.63</td>
+<td class="gt_row gt_center" headers="conf.low">0.28, 0.98</td>
+<td class="gt_row gt_center" headers="p.value">&lt;0.001</td>
+</tr>
+<tr class="even">
+<td class="gt_row gt_left" headers="label">year</td>
+<td class="gt_row gt_center" headers="stat_n">1,180</td>
+<td class="gt_row gt_center" headers="estimate"><br>
+</td>
+<td class="gt_row gt_center" headers="conf.low"><br>
+</td>
+<td class="gt_row gt_center" headers="p.value"><br>
+</td>
+</tr>
+<tr class="odd">
+<td class="gt_row gt_left" headers="label">&nbsp;&nbsp;&nbsp;&nbsp;2022-2023</td>
+<td class="gt_row gt_center" headers="stat_n"><br>
+</td>
+<td class="gt_row gt_center" headers="estimate">—</td>
+<td class="gt_row gt_center" headers="conf.low">—</td>
+<td class="gt_row gt_center" headers="p.value"><br>
+</td>
+</tr>
+<tr class="even">
+<td class="gt_row gt_left" headers="label">&nbsp;&nbsp;&nbsp;&nbsp;2023-2024</td>
+<td class="gt_row gt_center" headers="stat_n"><br>
+</td>
+<td class="gt_row gt_center" headers="estimate">-0.06</td>
+<td class="gt_row gt_center" headers="conf.low">-0.14, 0.02</td>
+<td class="gt_row gt_center" headers="p.value">0.12</td>
+</tr>
+<tr class="odd">
+<td class="gt_row gt_left" headers="label">&nbsp;&nbsp;&nbsp;&nbsp;2024-2025</td>
+<td class="gt_row gt_center" headers="stat_n"><br>
+</td>
+<td class="gt_row gt_center" headers="estimate">0.05</td>
+<td class="gt_row gt_center" headers="conf.low">-0.03, 0.13</td>
+<td class="gt_row gt_center" headers="p.value">0.2</td>
+</tr>
+<tr class="even">
+<td class="gt_row gt_left" headers="label">part</td>
+<td class="gt_row gt_center" headers="stat_n">1,180</td>
+<td class="gt_row gt_center" headers="estimate"><br>
+</td>
+<td class="gt_row gt_center" headers="conf.low"><br>
+</td>
+<td class="gt_row gt_center" headers="p.value"><br>
+</td>
+</tr>
+<tr class="odd">
+<td class="gt_row gt_left" headers="label">&nbsp;&nbsp;&nbsp;&nbsp;listening</td>
+<td class="gt_row gt_center" headers="stat_n"><br>
+</td>
+<td class="gt_row gt_center" headers="estimate">—</td>
+<td class="gt_row gt_center" headers="conf.low">—</td>
+<td class="gt_row gt_center" headers="p.value"><br>
+</td>
+</tr>
+<tr class="even">
+<td class="gt_row gt_left" headers="label">&nbsp;&nbsp;&nbsp;&nbsp;overall</td>
+<td class="gt_row gt_center" headers="stat_n"><br>
+</td>
+<td class="gt_row gt_center" headers="estimate">-0.06</td>
+<td class="gt_row gt_center" headers="conf.low">-0.16, 0.03</td>
+<td class="gt_row gt_center" headers="p.value">0.2</td>
+</tr>
+<tr class="odd">
+<td class="gt_row gt_left" headers="label">&nbsp;&nbsp;&nbsp;&nbsp;reading</td>
+<td class="gt_row gt_center" headers="stat_n"><br>
+</td>
+<td class="gt_row gt_center" headers="estimate">-0.10</td>
+<td class="gt_row gt_center" headers="conf.low">-0.20, 0.00</td>
+<td class="gt_row gt_center" headers="p.value">0.046</td>
+</tr>
+<tr class="even">
+<td class="gt_row gt_left" headers="label">&nbsp;&nbsp;&nbsp;&nbsp;speaking</td>
+<td class="gt_row gt_center" headers="stat_n"><br>
+</td>
+<td class="gt_row gt_center" headers="estimate">-0.02</td>
+<td class="gt_row gt_center" headers="conf.low">-0.12, 0.08</td>
+<td class="gt_row gt_center" headers="p.value">0.7</td>
+</tr>
+<tr class="odd">
+<td class="gt_row gt_left" headers="label">&nbsp;&nbsp;&nbsp;&nbsp;writing</td>
+<td class="gt_row gt_center" headers="stat_n"><br>
+</td>
+<td class="gt_row gt_center" headers="estimate">-0.38</td>
+<td class="gt_row gt_center" headers="conf.low">-0.48, -0.28</td>
+<td class="gt_row gt_center" headers="p.value">&lt;0.001</td>
+</tr>
+</tbody><tfoot>
+<tr class="gt_sourcenotes odd">
+<td colspan="5" class="gt_sourcenote">Abbreviation: CI = Confidence Interval</td>
+</tr>
+</tfoot>
+
+</table>
+
+</div>
+</div>
+</div>
 
 </main>
 <!-- /main column -->
