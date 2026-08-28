@@ -7,7 +7,7 @@ format: html
 
 ```{r}
 #| label: laoding  
-#| message: false 
+#| message: false
 
 library(here)
 library(gtsummary)
@@ -16,7 +16,11 @@ library(ggplot2)
 ```
 
 
+The IELTS exam consists of 4 parts: Listening, Speaking, Reading and Writing. Each part is scored from 1 to 9, then averaged for an overall score. 
+
 ```{r}
+#| label: tbl-one
+#| tbl-cap: "This table shows the distribution of scores among various nationalities from years 2022 - 2024"
 #| message: false 
 
 performance_by_nationality <- read_csv(here::here("performance_by_nationality.csv"))
@@ -28,4 +32,10 @@ tbl_summary(
 	add_overall(last = TRUE)
 ```
 
-The `echo: false` option disables the printing of code (only output is displayed).
+```{r}
+#| label: tbl-one
+#| tbl-cap: ""
+#| message: false 
+
+```
+
