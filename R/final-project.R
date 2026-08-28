@@ -28,6 +28,7 @@ tbl_uvregression(
 linear_model <- lm(score ~ nationality + year + part,
 									 data = performance_by_nationality)
 
+tidy(linear_model)
 
 ggplot(performance_by_nationality, aes(x=score, y=type)) +
 	geom_point() +
