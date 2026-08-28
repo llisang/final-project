@@ -5,7 +5,6 @@ library(here)
 library(gtsummary)
 library(tidyverse)
 library(ggplot2)
-library(broom)
 
 performance_by_nationality <- read_csv(here::here("performance_by_nationality.csv"))
 
