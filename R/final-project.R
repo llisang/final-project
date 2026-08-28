@@ -5,6 +5,7 @@ library(here)
 library(gtsummary)
 library(tidyverse)
 library(ggplot2)
+library(broom)
 
 performance_by_nationality <- read_csv(here::here("performance_by_nationality.csv"))
 
@@ -28,7 +29,6 @@ tbl_uvregression(
 linear_model <- lm(score ~ nationality + year + part,
 									 data = performance_by_nationality)
 
-tidy(linear_model)
 
 ggplot(performance_by_nationality, aes(x=score, y=type)) +
 	geom_point() +
