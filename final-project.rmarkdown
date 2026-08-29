@@ -67,3 +67,4 @@ linear_model <- lm(score ~ nationality + year + part,
 									 data = performance_by_nationality)
 ```
 
+

@@ -38,11 +38,12 @@ ggplot(performance_by_nationality, aes(x=score, y=type)) +
 
 
 type_score_avg <- function(data,part_overall = "overall"){
-	data %>%
-		filter(part == part_overall) %>%
-		group_by(type) %>%
+	data |>
+		filter(part == part_overall) |>
+		group_by(type) |>
 		summarize(avg_score = mean(score,na.rm=TRUE))
 }
 
 type_score_avg(performance_by_nationality)
+
 
