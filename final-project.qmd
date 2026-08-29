@@ -50,9 +50,10 @@ ggplot(performance_by_nationality, aes(x=score, y=type)) +
 		) +
 		theme_minimal()
 ```
+@fig-scatter shows that the majority of test scores range from 5 to 7, regardless of the reasoning behind taking the exam. 
 
 ```{r}
-#| label: load-data-and-plot
+#| label: tbl-uvregression
 #| warning: false
 #| message: false
 
@@ -62,8 +63,9 @@ tbl_uvregression(
 				include = c(nationality, year, part),
 					method = lm)
 
-
-linear_model <- lm(score ~ nationality + year + part,
-									 data = performance_by_nationality)
+linear_model <- lm(
+  score ~ nationality + year + part,
+  data = performance_by_nationality
+)
 ```
-
+@tbl-uvregression suggests that, without adjusting, the test-taker's nationality, the year the exam was taken, and the part of the exam are each individually associated with score.
