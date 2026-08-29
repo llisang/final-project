@@ -116,7 +116,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb1-6"><a href="#cb1-6" aria-hidden="true" tabindex="-1"></a>performance_by_nationality <span class="ot">&lt;-</span> <span class="fu">read_csv</span>(here<span class="sc">::</span><span class="fu">here</span>(<span class="st">"performance_by_nationality.csv"</span>))</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 </div>
-<p>The IELTS exam consists of 4 parts: Listening, Speaking, Reading and Writing. Each part is scored from 1 to 9, then averaged for an overall score. The dataset comes from the IELTS research website and contains mean scores in various aggregations.</p>
+<p>The IELTS exam consists of 4 parts: Listening, Speaking, Reading and Writing. Each part is scored from 1 to 9, then averaged for an overall score. The dataset comes from the IELTS research website and contains mean scores in various aggregations. There were 58 countries included in the data.</p>
 <div class="cell">
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb2"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a>performance_by_nationality <span class="ot">&lt;-</span> <span class="fu">read_csv</span>(here<span class="sc">::</span><span class="fu">here</span>(<span class="st">"performance_by_nationality.csv"</span>))</span>
 <span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a></span>
@@ -132,23 +132,23 @@ Table&nbsp;1: This table shows the scores among various nationalities from years
 </figcaption>
 <div aria-describedby="tbl-one-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
 <div class="cell-output-display">
-<div id="dnfaipucju" style="padding-left:0px;padding-right:0px;padding-top:10px;padding-bottom:10px;overflow-x:auto;overflow-y:auto;width:auto;height:auto;">
-<style>#dnfaipucju table {
+<div id="tggmsadlkq" style="padding-left:0px;padding-right:0px;padding-top:10px;padding-bottom:10px;overflow-x:auto;overflow-y:auto;width:auto;height:auto;">
+<style>#tggmsadlkq table {
   font-family: system-ui, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
-#dnfaipucju thead, #dnfaipucju tbody, #dnfaipucju tfoot, #dnfaipucju tr, #dnfaipucju td, #dnfaipucju th {
+#tggmsadlkq thead, #tggmsadlkq tbody, #tggmsadlkq tfoot, #tggmsadlkq tr, #tggmsadlkq td, #tggmsadlkq th {
   border-style: none;
 }
 
-#dnfaipucju p {
+#tggmsadlkq p {
   margin: 0;
   padding: 0;
 }
 
-#dnfaipucju .gt_table {
+#tggmsadlkq .gt_table {
   display: table;
   border-collapse: collapse;
   line-height: normal;
@@ -174,12 +174,12 @@ Table&nbsp;1: This table shows the scores among various nationalities from years
   border-left-color: #D3D3D3;
 }
 
-#dnfaipucju .gt_caption {
+#tggmsadlkq .gt_caption {
   padding-top: 4px;
   padding-bottom: 4px;
 }
 
-#dnfaipucju .gt_title {
+#tggmsadlkq .gt_title {
   color: #333333;
   font-size: 125%;
   font-weight: initial;
@@ -191,7 +191,7 @@ Table&nbsp;1: This table shows the scores among various nationalities from years
   border-bottom-width: 0;
 }
 
-#dnfaipucju .gt_subtitle {
+#tggmsadlkq .gt_subtitle {
   color: #333333;
   font-size: 85%;
   font-weight: initial;
@@ -203,7 +203,7 @@ Table&nbsp;1: This table shows the scores among various nationalities from years
   border-top-width: 0;
 }
 
-#dnfaipucju .gt_heading {
+#tggmsadlkq .gt_heading {
   background-color: #FFFFFF;
   text-align: center;
   border-bottom-color: #FFFFFF;
@@ -215,13 +215,13 @@ Table&nbsp;1: This table shows the scores among various nationalities from years
   border-right-color: #D3D3D3;
 }
 
-#dnfaipucju .gt_bottom_border {
+#tggmsadlkq .gt_bottom_border {
   border-bottom-style: solid;
   border-bottom-width: 2px;
   border-bottom-color: #D3D3D3;
 }
 
-#dnfaipucju .gt_col_headings {
+#tggmsadlkq .gt_col_headings {
   border-top-style: solid;
   border-top-width: 2px;
   border-top-color: #D3D3D3;
@@ -236,7 +236,7 @@ Table&nbsp;1: This table shows the scores among various nationalities from years
   border-right-color: #D3D3D3;
 }
 
-#dnfaipucju .gt_col_heading {
+#tggmsadlkq .gt_col_heading {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -256,7 +256,7 @@ Table&nbsp;1: This table shows the scores among various nationalities from years
   overflow-x: hidden;
 }
 
-#dnfaipucju .gt_column_spanner_outer {
+#tggmsadlkq .gt_column_spanner_outer {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -268,15 +268,15 @@ Table&nbsp;1: This table shows the scores among various nationalities from years
   padding-right: 4px;
 }
 
-#dnfaipucju .gt_column_spanner_outer:first-child {
+#tggmsadlkq .gt_column_spanner_outer:first-child {
   padding-left: 0;
 }
 
-#dnfaipucju .gt_column_spanner_outer:last-child {
+#tggmsadlkq .gt_column_spanner_outer:last-child {
   padding-right: 0;
 }
 
-#dnfaipucju .gt_column_spanner {
+#tggmsadlkq .gt_column_spanner {
   border-bottom-style: solid;
   border-bottom-width: 2px;
   border-bottom-color: #D3D3D3;
@@ -288,11 +288,11 @@ Table&nbsp;1: This table shows the scores among various nationalities from years
   width: 100%;
 }
 
-#dnfaipucju .gt_spanner_row {
+#tggmsadlkq .gt_spanner_row {
   border-bottom-style: hidden;
 }
 
-#dnfaipucju .gt_group_heading {
+#tggmsadlkq .gt_group_heading {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -318,7 +318,7 @@ Table&nbsp;1: This table shows the scores among various nationalities from years
   text-align: left;
 }
 
-#dnfaipucju .gt_empty_group_heading {
+#tggmsadlkq .gt_empty_group_heading {
   padding: 0.5px;
   color: #333333;
   background-color: #FFFFFF;
@@ -333,15 +333,15 @@ Table&nbsp;1: This table shows the scores among various nationalities from years
   vertical-align: middle;
 }
 
-#dnfaipucju .gt_from_md > :first-child {
+#tggmsadlkq .gt_from_md > :first-child {
   margin-top: 0;
 }
 
-#dnfaipucju .gt_from_md > :last-child {
+#tggmsadlkq .gt_from_md > :last-child {
   margin-bottom: 0;
 }
 
-#dnfaipucju .gt_row {
+#tggmsadlkq .gt_row {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -360,7 +360,7 @@ Table&nbsp;1: This table shows the scores among various nationalities from years
   overflow-x: hidden;
 }
 
-#dnfaipucju .gt_stub {
+#tggmsadlkq .gt_stub {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -373,7 +373,7 @@ Table&nbsp;1: This table shows the scores among various nationalities from years
   padding-right: 5px;
 }
 
-#dnfaipucju .gt_stub_row_group {
+#tggmsadlkq .gt_stub_row_group {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -387,15 +387,15 @@ Table&nbsp;1: This table shows the scores among various nationalities from years
   vertical-align: top;
 }
 
-#dnfaipucju .gt_row_group_first td {
+#tggmsadlkq .gt_row_group_first td {
   border-top-width: 2px;
 }
 
-#dnfaipucju .gt_row_group_first th {
+#tggmsadlkq .gt_row_group_first th {
   border-top-width: 2px;
 }
 
-#dnfaipucju .gt_summary_row {
+#tggmsadlkq .gt_summary_row {
   color: #333333;
   background-color: #FFFFFF;
   text-transform: inherit;
@@ -405,16 +405,16 @@ Table&nbsp;1: This table shows the scores among various nationalities from years
   padding-right: 5px;
 }
 
-#dnfaipucju .gt_first_summary_row {
+#tggmsadlkq .gt_first_summary_row {
   border-top-style: solid;
   border-top-color: #D3D3D3;
 }
 
-#dnfaipucju .gt_first_summary_row.thick {
+#tggmsadlkq .gt_first_summary_row.thick {
   border-top-width: 2px;
 }
 
-#dnfaipucju .gt_last_summary_row {
+#tggmsadlkq .gt_last_summary_row {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -424,7 +424,7 @@ Table&nbsp;1: This table shows the scores among various nationalities from years
   border-bottom-color: #D3D3D3;
 }
 
-#dnfaipucju .gt_grand_summary_row {
+#tggmsadlkq .gt_grand_summary_row {
   color: #333333;
   background-color: #FFFFFF;
   text-transform: inherit;
@@ -434,7 +434,7 @@ Table&nbsp;1: This table shows the scores among various nationalities from years
   padding-right: 5px;
 }
 
-#dnfaipucju .gt_first_grand_summary_row {
+#tggmsadlkq .gt_first_grand_summary_row {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -444,7 +444,7 @@ Table&nbsp;1: This table shows the scores among various nationalities from years
   border-top-color: #D3D3D3;
 }
 
-#dnfaipucju .gt_last_grand_summary_row_top {
+#tggmsadlkq .gt_last_grand_summary_row_top {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -454,11 +454,11 @@ Table&nbsp;1: This table shows the scores among various nationalities from years
   border-bottom-color: #D3D3D3;
 }
 
-#dnfaipucju .gt_striped {
+#tggmsadlkq .gt_striped {
   background-color: rgba(128, 128, 128, 0.05);
 }
 
-#dnfaipucju .gt_table_body {
+#tggmsadlkq .gt_table_body {
   border-top-style: solid;
   border-top-width: 2px;
   border-top-color: #D3D3D3;
@@ -467,7 +467,7 @@ Table&nbsp;1: This table shows the scores among various nationalities from years
   border-bottom-color: #D3D3D3;
 }
 
-#dnfaipucju .gt_footnotes {
+#tggmsadlkq .gt_footnotes {
   color: #333333;
   background-color: #FFFFFF;
   border-bottom-style: none;
@@ -481,7 +481,7 @@ Table&nbsp;1: This table shows the scores among various nationalities from years
   border-right-color: #D3D3D3;
 }
 
-#dnfaipucju .gt_footnote {
+#tggmsadlkq .gt_footnote {
   margin: 0px;
   font-size: 90%;
   padding-top: 4px;
@@ -490,7 +490,7 @@ Table&nbsp;1: This table shows the scores among various nationalities from years
   padding-right: 5px;
 }
 
-#dnfaipucju .gt_sourcenotes {
+#tggmsadlkq .gt_sourcenotes {
   color: #333333;
   background-color: #FFFFFF;
   border-bottom-style: none;
@@ -504,7 +504,7 @@ Table&nbsp;1: This table shows the scores among various nationalities from years
   border-right-color: #D3D3D3;
 }
 
-#dnfaipucju .gt_sourcenote {
+#tggmsadlkq .gt_sourcenote {
   font-size: 90%;
   padding-top: 4px;
   padding-bottom: 4px;
@@ -512,72 +512,72 @@ Table&nbsp;1: This table shows the scores among various nationalities from years
   padding-right: 5px;
 }
 
-#dnfaipucju .gt_left {
+#tggmsadlkq .gt_left {
   text-align: left;
 }
 
-#dnfaipucju .gt_center {
+#tggmsadlkq .gt_center {
   text-align: center;
 }
 
-#dnfaipucju .gt_right {
+#tggmsadlkq .gt_right {
   text-align: right;
   font-variant-numeric: tabular-nums;
 }
 
-#dnfaipucju .gt_font_normal {
+#tggmsadlkq .gt_font_normal {
   font-weight: normal;
 }
 
-#dnfaipucju .gt_font_bold {
+#tggmsadlkq .gt_font_bold {
   font-weight: bold;
 }
 
-#dnfaipucju .gt_font_italic {
+#tggmsadlkq .gt_font_italic {
   font-style: italic;
 }
 
-#dnfaipucju .gt_super {
+#tggmsadlkq .gt_super {
   font-size: 65%;
 }
 
-#dnfaipucju .gt_footnote_marks {
+#tggmsadlkq .gt_footnote_marks {
   font-size: 75%;
   vertical-align: 0.4em;
   position: initial;
 }
 
-#dnfaipucju .gt_asterisk {
+#tggmsadlkq .gt_asterisk {
   font-size: 100%;
   vertical-align: 0;
 }
 
-#dnfaipucju .gt_indent_1 {
+#tggmsadlkq .gt_indent_1 {
   text-indent: 5px;
 }
 
-#dnfaipucju .gt_indent_2 {
+#tggmsadlkq .gt_indent_2 {
   text-indent: 10px;
 }
 
-#dnfaipucju .gt_indent_3 {
+#tggmsadlkq .gt_indent_3 {
   text-indent: 15px;
 }
 
-#dnfaipucju .gt_indent_4 {
+#tggmsadlkq .gt_indent_4 {
   text-indent: 20px;
 }
 
-#dnfaipucju .gt_indent_5 {
+#tggmsadlkq .gt_indent_5 {
   text-indent: 25px;
 }
 
-#dnfaipucju .katex-display {
+#tggmsadlkq .katex-display {
   display: inline-flex !important;
   margin-bottom: 0.75em !important;
 }
 
-#dnfaipucju div.Reactable > div.rt-table > div.rt-thead > div.rt-tr.rt-tr-group-header > div.rt-th-group:after {
+#tggmsadlkq div.Reactable > div.rt-table > div.rt-thead > div.rt-tr.rt-tr-group-header > div.rt-th-group:after {
   height: 0px !important;
 }
 </style>
@@ -1088,7 +1088,6 @@ N = 1,180<span class="gt_footnote_marks" style="white-space:nowrap;font-style:it
 </figure>
 </div>
 </div>
-<p>There are two versions of the exam: Academic and General Training.</p>
 <div class="cell">
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb3"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="fu">ggplot</span>(performance_by_nationality, <span class="fu">aes</span>(<span class="at">x=</span>score, <span class="at">y=</span>type)) <span class="sc">+</span></span>
 <span id="cb3-2"><a href="#cb3-2" aria-hidden="true" tabindex="-1"></a>    <span class="fu">geom_point</span>(<span class="at">color =</span> <span class="st">"pink"</span>) <span class="sc">+</span></span>
@@ -1110,7 +1109,7 @@ Figure&nbsp;1: This figure shows the distribution of scores for each test versio
 </div>
 </div>
 </div>
-<p><a href="#fig-scatter" class="quarto-xref">Figure&nbsp;1</a> shows that the majority of test scores range from 5 to 7, regardless of the reasoning behind taking the exam.</p>
+<p>The exam has two versions: Academic and General Training. <a href="#fig-scatter" class="quarto-xref">Figure&nbsp;1</a> shows that the majority of test scores range from 5 to 7, regardless of the reason for taking the exam.</p>
 <div class="cell">
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb4"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a><span class="fu">tbl_uvregression</span>(</span>
 <span id="cb4-2"><a href="#cb4-2" aria-hidden="true" tabindex="-1"></a>    performance_by_nationality,</span>
@@ -1128,23 +1127,23 @@ Table&nbsp;2
 </figcaption>
 <div aria-describedby="tbl-uvregression-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
 <div class="cell-output-display">
-<div id="dlpasthnyw" style="padding-left:0px;padding-right:0px;padding-top:10px;padding-bottom:10px;overflow-x:auto;overflow-y:auto;width:auto;height:auto;">
-<style>#dlpasthnyw table {
+<div id="merloysmxy" style="padding-left:0px;padding-right:0px;padding-top:10px;padding-bottom:10px;overflow-x:auto;overflow-y:auto;width:auto;height:auto;">
+<style>#merloysmxy table {
   font-family: system-ui, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
-#dlpasthnyw thead, #dlpasthnyw tbody, #dlpasthnyw tfoot, #dlpasthnyw tr, #dlpasthnyw td, #dlpasthnyw th {
+#merloysmxy thead, #merloysmxy tbody, #merloysmxy tfoot, #merloysmxy tr, #merloysmxy td, #merloysmxy th {
   border-style: none;
 }
 
-#dlpasthnyw p {
+#merloysmxy p {
   margin: 0;
   padding: 0;
 }
 
-#dlpasthnyw .gt_table {
+#merloysmxy .gt_table {
   display: table;
   border-collapse: collapse;
   line-height: normal;
@@ -1170,12 +1169,12 @@ Table&nbsp;2
   border-left-color: #D3D3D3;
 }
 
-#dlpasthnyw .gt_caption {
+#merloysmxy .gt_caption {
   padding-top: 4px;
   padding-bottom: 4px;
 }
 
-#dlpasthnyw .gt_title {
+#merloysmxy .gt_title {
   color: #333333;
   font-size: 125%;
   font-weight: initial;
@@ -1187,7 +1186,7 @@ Table&nbsp;2
   border-bottom-width: 0;
 }
 
-#dlpasthnyw .gt_subtitle {
+#merloysmxy .gt_subtitle {
   color: #333333;
   font-size: 85%;
   font-weight: initial;
@@ -1199,7 +1198,7 @@ Table&nbsp;2
   border-top-width: 0;
 }
 
-#dlpasthnyw .gt_heading {
+#merloysmxy .gt_heading {
   background-color: #FFFFFF;
   text-align: center;
   border-bottom-color: #FFFFFF;
@@ -1211,13 +1210,13 @@ Table&nbsp;2
   border-right-color: #D3D3D3;
 }
 
-#dlpasthnyw .gt_bottom_border {
+#merloysmxy .gt_bottom_border {
   border-bottom-style: solid;
   border-bottom-width: 2px;
   border-bottom-color: #D3D3D3;
 }
 
-#dlpasthnyw .gt_col_headings {
+#merloysmxy .gt_col_headings {
   border-top-style: solid;
   border-top-width: 2px;
   border-top-color: #D3D3D3;
@@ -1232,7 +1231,7 @@ Table&nbsp;2
   border-right-color: #D3D3D3;
 }
 
-#dlpasthnyw .gt_col_heading {
+#merloysmxy .gt_col_heading {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -1252,7 +1251,7 @@ Table&nbsp;2
   overflow-x: hidden;
 }
 
-#dlpasthnyw .gt_column_spanner_outer {
+#merloysmxy .gt_column_spanner_outer {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -1264,15 +1263,15 @@ Table&nbsp;2
   padding-right: 4px;
 }
 
-#dlpasthnyw .gt_column_spanner_outer:first-child {
+#merloysmxy .gt_column_spanner_outer:first-child {
   padding-left: 0;
 }
 
-#dlpasthnyw .gt_column_spanner_outer:last-child {
+#merloysmxy .gt_column_spanner_outer:last-child {
   padding-right: 0;
 }
 
-#dlpasthnyw .gt_column_spanner {
+#merloysmxy .gt_column_spanner {
   border-bottom-style: solid;
   border-bottom-width: 2px;
   border-bottom-color: #D3D3D3;
@@ -1284,11 +1283,11 @@ Table&nbsp;2
   width: 100%;
 }
 
-#dlpasthnyw .gt_spanner_row {
+#merloysmxy .gt_spanner_row {
   border-bottom-style: hidden;
 }
 
-#dlpasthnyw .gt_group_heading {
+#merloysmxy .gt_group_heading {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -1314,7 +1313,7 @@ Table&nbsp;2
   text-align: left;
 }
 
-#dlpasthnyw .gt_empty_group_heading {
+#merloysmxy .gt_empty_group_heading {
   padding: 0.5px;
   color: #333333;
   background-color: #FFFFFF;
@@ -1329,15 +1328,15 @@ Table&nbsp;2
   vertical-align: middle;
 }
 
-#dlpasthnyw .gt_from_md > :first-child {
+#merloysmxy .gt_from_md > :first-child {
   margin-top: 0;
 }
 
-#dlpasthnyw .gt_from_md > :last-child {
+#merloysmxy .gt_from_md > :last-child {
   margin-bottom: 0;
 }
 
-#dlpasthnyw .gt_row {
+#merloysmxy .gt_row {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -1356,7 +1355,7 @@ Table&nbsp;2
   overflow-x: hidden;
 }
 
-#dlpasthnyw .gt_stub {
+#merloysmxy .gt_stub {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -1369,7 +1368,7 @@ Table&nbsp;2
   padding-right: 5px;
 }
 
-#dlpasthnyw .gt_stub_row_group {
+#merloysmxy .gt_stub_row_group {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -1383,15 +1382,15 @@ Table&nbsp;2
   vertical-align: top;
 }
 
-#dlpasthnyw .gt_row_group_first td {
+#merloysmxy .gt_row_group_first td {
   border-top-width: 2px;
 }
 
-#dlpasthnyw .gt_row_group_first th {
+#merloysmxy .gt_row_group_first th {
   border-top-width: 2px;
 }
 
-#dlpasthnyw .gt_summary_row {
+#merloysmxy .gt_summary_row {
   color: #333333;
   background-color: #FFFFFF;
   text-transform: inherit;
@@ -1401,16 +1400,16 @@ Table&nbsp;2
   padding-right: 5px;
 }
 
-#dlpasthnyw .gt_first_summary_row {
+#merloysmxy .gt_first_summary_row {
   border-top-style: solid;
   border-top-color: #D3D3D3;
 }
 
-#dlpasthnyw .gt_first_summary_row.thick {
+#merloysmxy .gt_first_summary_row.thick {
   border-top-width: 2px;
 }
 
-#dlpasthnyw .gt_last_summary_row {
+#merloysmxy .gt_last_summary_row {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -1420,7 +1419,7 @@ Table&nbsp;2
   border-bottom-color: #D3D3D3;
 }
 
-#dlpasthnyw .gt_grand_summary_row {
+#merloysmxy .gt_grand_summary_row {
   color: #333333;
   background-color: #FFFFFF;
   text-transform: inherit;
@@ -1430,7 +1429,7 @@ Table&nbsp;2
   padding-right: 5px;
 }
 
-#dlpasthnyw .gt_first_grand_summary_row {
+#merloysmxy .gt_first_grand_summary_row {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -1440,7 +1439,7 @@ Table&nbsp;2
   border-top-color: #D3D3D3;
 }
 
-#dlpasthnyw .gt_last_grand_summary_row_top {
+#merloysmxy .gt_last_grand_summary_row_top {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -1450,11 +1449,11 @@ Table&nbsp;2
   border-bottom-color: #D3D3D3;
 }
 
-#dlpasthnyw .gt_striped {
+#merloysmxy .gt_striped {
   background-color: rgba(128, 128, 128, 0.05);
 }
 
-#dlpasthnyw .gt_table_body {
+#merloysmxy .gt_table_body {
   border-top-style: solid;
   border-top-width: 2px;
   border-top-color: #D3D3D3;
@@ -1463,7 +1462,7 @@ Table&nbsp;2
   border-bottom-color: #D3D3D3;
 }
 
-#dlpasthnyw .gt_footnotes {
+#merloysmxy .gt_footnotes {
   color: #333333;
   background-color: #FFFFFF;
   border-bottom-style: none;
@@ -1477,7 +1476,7 @@ Table&nbsp;2
   border-right-color: #D3D3D3;
 }
 
-#dlpasthnyw .gt_footnote {
+#merloysmxy .gt_footnote {
   margin: 0px;
   font-size: 90%;
   padding-top: 4px;
@@ -1486,7 +1485,7 @@ Table&nbsp;2
   padding-right: 5px;
 }
 
-#dlpasthnyw .gt_sourcenotes {
+#merloysmxy .gt_sourcenotes {
   color: #333333;
   background-color: #FFFFFF;
   border-bottom-style: none;
@@ -1500,7 +1499,7 @@ Table&nbsp;2
   border-right-color: #D3D3D3;
 }
 
-#dlpasthnyw .gt_sourcenote {
+#merloysmxy .gt_sourcenote {
   font-size: 90%;
   padding-top: 4px;
   padding-bottom: 4px;
@@ -1508,72 +1507,72 @@ Table&nbsp;2
   padding-right: 5px;
 }
 
-#dlpasthnyw .gt_left {
+#merloysmxy .gt_left {
   text-align: left;
 }
 
-#dlpasthnyw .gt_center {
+#merloysmxy .gt_center {
   text-align: center;
 }
 
-#dlpasthnyw .gt_right {
+#merloysmxy .gt_right {
   text-align: right;
   font-variant-numeric: tabular-nums;
 }
 
-#dlpasthnyw .gt_font_normal {
+#merloysmxy .gt_font_normal {
   font-weight: normal;
 }
 
-#dlpasthnyw .gt_font_bold {
+#merloysmxy .gt_font_bold {
   font-weight: bold;
 }
 
-#dlpasthnyw .gt_font_italic {
+#merloysmxy .gt_font_italic {
   font-style: italic;
 }
 
-#dlpasthnyw .gt_super {
+#merloysmxy .gt_super {
   font-size: 65%;
 }
 
-#dlpasthnyw .gt_footnote_marks {
+#merloysmxy .gt_footnote_marks {
   font-size: 75%;
   vertical-align: 0.4em;
   position: initial;
 }
 
-#dlpasthnyw .gt_asterisk {
+#merloysmxy .gt_asterisk {
   font-size: 100%;
   vertical-align: 0;
 }
 
-#dlpasthnyw .gt_indent_1 {
+#merloysmxy .gt_indent_1 {
   text-indent: 5px;
 }
 
-#dlpasthnyw .gt_indent_2 {
+#merloysmxy .gt_indent_2 {
   text-indent: 10px;
 }
 
-#dlpasthnyw .gt_indent_3 {
+#merloysmxy .gt_indent_3 {
   text-indent: 15px;
 }
 
-#dlpasthnyw .gt_indent_4 {
+#merloysmxy .gt_indent_4 {
   text-indent: 20px;
 }
 
-#dlpasthnyw .gt_indent_5 {
+#merloysmxy .gt_indent_5 {
   text-indent: 25px;
 }
 
-#dlpasthnyw .katex-display {
+#merloysmxy .katex-display {
   display: inline-flex !important;
   margin-bottom: 0.75em !important;
 }
 
-#dlpasthnyw div.Reactable > div.rt-table > div.rt-thead > div.rt-tr.rt-tr-group-header > div.rt-th-group:after {
+#merloysmxy div.Reactable > div.rt-table > div.rt-thead > div.rt-tr.rt-tr-group-header > div.rt-th-group:after {
   height: 0px !important;
 }
 </style>

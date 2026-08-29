@@ -68,3 +68,4 @@ linear_model <- lm(
 )
 ```
 @tbl-uvregression suggests that, without adjusting, the test-taker's nationality, the year the exam was taken, and the part of the exam are each individually associated with score.
+
