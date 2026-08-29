@@ -28,13 +28,28 @@ The IELTS exam consists of 4 parts: Listening, Speaking, Reading and Writing. Ea
 
 performance_by_nationality <- read_csv(here::here("performance_by_nationality.csv"))
 
-tbl_summary(
+table1 <- tbl_summary(
 	performance_by_nationality,
 			by = year,
 				include = c(nationality, score, part)) |>
 	add_overall(last = TRUE)
+
+table1 
 ```
 
+```{r}
+#| message: false
+#| warning: false
+#| echo: false
+
+score_2024 <- inline_text(table1,variable = "score",column = "2024-2025")
+
+score_2023 <- inline_text(table1,variable = "score",column = "2023-2024")
+
+score_2022 <- inline_text(table1,variable = "score",column = "2022-2023")
+```
+
+In most recent testing period, the median overall score was `r score_2024` for years 2024 - 2025, which is slightly higher than the median overall scores for 2023 - 2024 (`r score_2023`) and 2022 - 2023 (`r score_2022`). 
 
 ```{r}
 #| label: fig-scatter
@@ -49,6 +64,7 @@ ggplot(performance_by_nationality, aes(x=score, y=type)) +
 		) +
 		theme_minimal()
 ```
+
 The exam has two versions: Academic and General Training. @fig-scatter shows that the majority of test scores range from 5 to 7, regardless of the reason for taking the exam. 
 
 ```{r}
