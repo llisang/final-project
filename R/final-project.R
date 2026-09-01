@@ -29,12 +29,16 @@ linear_model <- lm(score ~ nationality + year + part,
 									 data = performance_by_nationality)
 
 
-ggplot(performance_by_nationality, aes(x=score, y=type)) +
+scatterplot <- ggplot(performance_by_nationality, aes(x=score, y=type)) +
 	geom_point() +
 		labs(
 					y = "Reason for IELTS Exam",
 					x = "Test Score"
 		)
+
+scatterplot
+
+ggsave(plot=scatterplot, filename=here::here("project-image.png"))
 
 
 type_score_avg <- function(data,part_overall = "overall"){
