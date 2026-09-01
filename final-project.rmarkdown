@@ -1,0 +1,87 @@
+---
+title: "final-project"
+author: "Leah Sang"
+format: html
+---
+
+
+```{r}
+#| label: laoding  
+#| message: false
+#| warning: false
+
+library(here)
+library(gtsummary)
+library(tidyverse)
+library(ggplot2)
+
+performance_by_nationality <- read_csv(here::here("performance_by_nationality.csv"))
+```
+
+
+The IELTS exam consists of 4 parts: Listening, Speaking, Reading and Writing. Each part is scored from 1 to 9, then averaged for an overall score. The dataset comes from the IELTS research website and contains mean scores in various aggregations. There were `r length(unique(performance_by_nationality$nationality,))` countries included in the data. 
+
+```{r}
+#| label: tbl-one
+#| tbl-cap: "This table shows the scores among various nationalities from years 2022 - 2024"
+#| message: false 
+
+performance_by_nationality <- read_csv(here::here("performance_by_nationality.csv"))
+
+table1 <- tbl_summary(
+	performance_by_nationality,
+			by = year,
+				include = c(nationality, score, part)) |>
+	add_overall(last = TRUE)
+
+table1 
+```
+
+```{r}
+#| message: false
+#| warning: false
+#| echo: false
+
+score_2024 <- inline_text(table1,variable = "score",column = "2024-2025")
+
+score_2023 <- inline_text(table1,variable = "score",column = "2023-2024")
+
+score_2022 <- inline_text(table1,variable = "score",column = "2022-2023")
+```
+
+In most recent testing period, the median overall score was `r score_2024` for years 2024 - 2025, which is slightly higher than the median overall scores for 2023 - 2024 (`r score_2023`) and 2022 - 2023 (`r score_2022`). 
+
+```{r}
+#| label: fig-scatter
+#| fig-cap: "This figure shows the distribution of scores for each test version"
+#| message: false 
+
+ggplot(performance_by_nationality, aes(x=score, y=type)) +
+	geom_point(color = "pink") +
+		labs(
+					y = "Reason for IELTS Exam",
+					x = "Test Score"
+		) +
+		theme_minimal()
+```
+
+The exam has two versions: Academic and General Training. @fig-scatter shows that the majority of test scores range from 5 to 7, regardless of the reason for taking the exam. 
+
+```{r}
+#| label: tbl-uvregression
+#| warning: false
+#| message: false
+
+tbl_uvregression(
+	performance_by_nationality,
+			y = score,
+				include = c(nationality, year, part),
+					method = lm)
+
+linear_model <- lm(
+  score ~ nationality + year + part,
+  data = performance_by_nationality
+)
+```
+@tbl-uvregression suggests that, without adjusting, the test-taker's nationality, the year the exam was taken, and the part of the exam are each individually associated with score.
+
